@@ -1,0 +1,20 @@
+﻿HealthNotificationWpf
+1.0.0.0
+
+winexe
+C#
+.cs
+D:\Ais Radar Projects\HealthNotificationWpf\HealthNotificationWpf\obj\Release\net6.0-windows\
+HealthNotificationWpf
+none
+false
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
+D:\Ais Radar Projects\HealthNotificationWpf\HealthNotificationWpf\App.xaml
+4949059176
+
+18-1011795864
+227-1654501939
+MainWindow.xaml;NotificationForm.xaml;TestDesign.xaml;Window1.xaml;
+
+False
+

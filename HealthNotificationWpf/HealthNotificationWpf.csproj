@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\ExitIcon.ico" />
+    <None Remove="Resources\notificationIcon.ico" />
+    <None Remove="Resources\Vixie.gif" />
+    <None Remove="Resources\Vixie_2.gif" />
+    <None Remove="Resources\Vixie_3.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="H.NotifyIcon.Wpf" Version="2.0.108" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\ExitIcon.ico" />
+    <Resource Include="Resources\notificationIcon.ico" />
+    <Resource Include="Resources\Vixie.gif" />
+    <Resource Include="Resources\Vixie_2.gif" />
+    <Resource Include="Resources\Vixie_3.gif" />
+  </ItemGroup>
+
+</Project>

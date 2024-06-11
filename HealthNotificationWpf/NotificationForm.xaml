@@ -1,0 +1,28 @@
+﻿<Window x:Class="HealthNotificationWpf.NotificationForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:local="clr-namespace:HealthNotificationWpf"
+        mc:Ignorable="d"
+        Title="NotificationForm" Height="200" Width="500" Background="{x:Null}" AllowsTransparency="True" WindowStyle="None" Loaded="Window_Loaded">
+    <Grid Height="200" Width="500">
+        <TextBlock Loaded="txtBlockLoaded" Padding="18,18,18,40" Opacity="100" x:Name="txtNotificationForm" VerticalAlignment="Bottom" HorizontalAlignment="Right" TextWrapping="Wrap" TextAlignment="Left" FontSize="14" Foreground="Black" Margin="0,0,194,38" Height="152" Width="296" Text="TextBlock" >
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF003EFF"/>
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FF171717"/>
+                    <GradientStop Color="#FFFFD0A8"/>
+                    <GradientStop Color="#FFFFE3CB" Offset="0.984"/>
+                </LinearGradientBrush>
+            </TextBlock.Background></TextBlock>
+        <TextBlock x:Name="txtNotificationFormUrl" Visibility="Hidden" HorizontalAlignment="Left" Height="16" Margin="0,154,0,0" TextAlignment="Center" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="138" Foreground="White"/>
+        <Image Loaded="VixieFace_Loaded" x:Name="VixieFace" gif:ImageBehavior.AnimatedSource="/Resources/Vixie_3.gif" gif:ImageBehavior.RepeatBehavior="Forever" HorizontalAlignment="Center" Height="0" Margin="311,15,0,0" VerticalAlignment="Center" Width="0"/>
+        <Image MouseEnter="Exit_MouseEnter" MouseLeave="Exit_MouseLeave" x:Name="Exit" Mouse.MouseDown="Exit_MouseDown" HorizontalAlignment="Left" Height="20" Margin="474,15,0,0" VerticalAlignment="Top" Width="20" Source="/Resources/ExitIcon.ico"/>
+        <Button Loaded="Button_Loaded" Opacity="0" Click="Hyperlink_Click" Margin="20,121,307,51" BorderBrush="{x:Null}" Foreground="Black" Background="{x:Null}">Click for more Information...
+        </Button>
+        <Label Loaded="Label_Loaded" Content="Vixie Health App" Opacity="0" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top" FontSize="10"/>
+    </Grid>
+</Window>
